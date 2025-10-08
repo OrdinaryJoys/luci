@@ -150,6 +150,27 @@ h3 {
   display: block;
   width: 100%;
 }
+
+/* ----------------------------------------------------- */
+/* 在 h3 样式块结束后，h4 样式块开始前插入以下代码 */
+
+/* 针对防火墙常规设置 (General Settings) 的修复 */
+.cbi-page-firewall-zones .cbi-section {
+    /* 解决上下间距不足问题：增加底部外边距 */
+    margin-bottom: 30px !important;
+    
+    /* 解决左右贴边问题：增加左右内边距 */
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+/* 确保 h3 标题跟随新的左边距对齐 */
+.cbi-page-firewall-zones .cbi-section h3 {
+    margin-left: 20px;
+}
+
+/* ----------------------------------------------------- */
+
 h4 {
   margin: 0;
   padding: 0.75rem 1.25rem;
