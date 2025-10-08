@@ -807,7 +807,7 @@ fieldset > fieldset,
 }
 
 .cbi-section > h3:first-child,
-
+.cbi-title,
 .panel-title {
 	font-size: 1.4rem;
 	line-height: 1;
@@ -819,6 +819,17 @@ fieldset > fieldset,
 	color: #404040;
 	border-bottom: thin solid #eee;
 }
+
+.cbi-title {
+	display: flex;
+}
+
+.cbi-title > h3:first-child {
+	font-size: unset;
+	margin: unset;
+	padding-bottom: unset;
+}
+
 
 
 .cbi-section > h4:first-child,
