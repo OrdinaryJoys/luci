@@ -565,6 +565,20 @@ p {
 	display: none;
 }
 
+.cbi-title {
+	display: flex;
+	border-bottom: 1px solid;
+	padding-bottom: 4px;
+	margin: .25em 0 .5em 0;
+}
+
+.cbi-title > h3 {
+	border-bottom: unset;
+	padding-bottom: unset;
+	margin: unset;
+	width: unset;
+}
+
 .cbi-title-ref {
 	color: #37c;
 }
