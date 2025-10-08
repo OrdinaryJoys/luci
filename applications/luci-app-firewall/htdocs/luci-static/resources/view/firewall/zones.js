@@ -105,6 +105,14 @@ return view.extend({
 		}
         */
 
+		// 替换为占位符 (如果删除原代码块导致布局错乱)
+		s = m.section(form.TypedSection, 'defaults', '', ''); 
+		s.anonymous = true;
+		s.addremove = false;
+		s.render = function() {
+    	return E([]); // 渲染一个空数组，不显示任何内容
+		};
+		
 		s = m.section(form.GridSection, 'zone', _('Zones'));
 		s.addremove = true;
 		s.anonymous = true;
