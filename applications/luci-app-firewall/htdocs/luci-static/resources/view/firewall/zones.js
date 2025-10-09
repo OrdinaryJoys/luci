@@ -75,16 +75,6 @@ return view.extend({
 			p[i].value('ACCEPT', _('accept'));
 		}
 
-		/* ---------- 在此处插入空行间隔 ---------- */
-		var spacer = m.section(form.TypedSection, '__spacer__', '');
-	    spacer.anonymous = true;
-		spacer.addremove = false;
-		var dummy = spacer.option(form.DummyValue, '_desc');
-		dummy.rawhtml = true;
-		dummy.cfgvalue = function() { return ''; };
-
-		/* ===== 最后返回渲染结果 ===== */
-		return m.render();
 		
 		/* Netfilter flow offload support */
 
