@@ -1990,7 +1990,7 @@ td > table > tbody > tr > td,
   gap: 0.875rem;
 }
 /* div#cbi-firewall-cfg01e63d */
-div#cbi-firewall-cfg01e63d {
+#cbi-firewall-cfg01e63d {
   padding-bottom: 1.5rem !important;
 }
 .cbi-section-node > [id^="cbi-config-"] {
